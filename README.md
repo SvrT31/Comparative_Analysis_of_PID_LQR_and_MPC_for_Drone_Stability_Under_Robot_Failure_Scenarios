@@ -16,7 +16,7 @@ One of the most pressing concerns in today’s drone industry is the risk of qua
 ## Problem Statement 
 Many promising techniques exist to address motor failure in quadrotor drones, but there is a critical need for a comprehensive, realistic comparison of PID, LQR, and MPC controllers in conditions that closely mimic real life. Most studies focus on specific control strategies, often relying on mathematical simulations that fall short of capturing real-world complexities like environmental disturbances, sensor noise, and hardware wear. Realistic simulation environments like ROS Gazebo lack the proper simulation environments where such controllers can be tested. Thus, a thorough assessment of these controllers via real-life testing is essential to reveal their robustness and efficiency, ultimately supporting safer, more resilient fault-tolerant control in UAVs.
 
-### Objective of the research 
+### Objectives of the research 
 1. Build a Do-It-Yourself (DIY) drone without a flight controller, primarily based on Raspberry Pi and Arduino to test the effectiveness of various control techniques  in real-life.
 2. Test out the effectiveness of the 3 control techniques (PID, MPC, LQR) under single rotor failure configuration for altitude hold.
 3. Perform comprehensive analysis on how to avoid accidents after more than one rotor has failed, and give industry deployable valid suggestions.
@@ -47,8 +47,12 @@ I first approached the ADAPT Lab (Drone Lab) at VIT Chennai, but soon found out 
 
 ### Mechanics
 
-I started with the mechanical aspects. In order to have a universal drone, I had to buy one with 45 degree arms where all motors were upright. Thus, I chose the Q450 drone chassis.
+I started with the mechanical aspects first as it would give me proper understanding of weight, and thus, what kind of motors and batteries I should use. 
+
+In order to have a universal drone, I had to buy one with 45 degree arms where all motors were upright. Thus, I chose the Q450 drone chassis.
+
 Landing gear was added to this as I planned on adding the battery at the bottom. I also drilled 4 holes to insert zip ties in it for the battery. This finished majority of the physical body of the drone
+
 
 ### Eletronics
 
