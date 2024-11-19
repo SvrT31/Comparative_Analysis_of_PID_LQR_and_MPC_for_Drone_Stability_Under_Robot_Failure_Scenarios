@@ -8,6 +8,8 @@ The program "manual_tuning.py" is used to find the hold position for singular mo
 
 "adagrad_tuning.py" is the adaptation of gradient descent for PID tuning. The source article on how to do this is linked [here](https://towardsdatascience.com/pid-controller-optimization-a-gradient-descent-approach-58876e14eef2).
 
+The "arduino" directory just contains the code for arduino to take data from the controller and send it to the escs which are connected to the motors.
+
 ## Abstract
 One of the most pressing concerns in today’s drone industry is the risk of quadrotor motor failure, particularly in larger drones where such incidents can have severe or even fatal consequences. While mechanical safety measures like parachutes offer some level of protection, they come with limitations such as minimum altitude requirements and potential malfunctions. An alternative and increasingly important approach involves failsafe control strategies that enable the drone to maintain stable flight or execute a controlled landing using its remaining operational motors. Many such failsafe control methods have been proposed, but most remain theoretical and untested, with a noticeable lack of thorough comparative analyses to assess their real-world effectiveness. My project addresses this gap by evaluating the performance of standard control techniques like Proportional-Integral-Derivative (PID) controller, Model Predictive Controller (MPC), and Linear Quadratic Regulator (LQR) under motor failure conditions. A standard DIY Q450 quadcopter drone is used for all the tests so results are easily replicable. This comparative study aims to determine which approach best maintains drone stability in motor failure scenarios.
 
