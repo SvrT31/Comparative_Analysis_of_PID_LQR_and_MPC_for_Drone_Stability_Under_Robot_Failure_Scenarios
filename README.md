@@ -1,4 +1,6 @@
-This repository includes the codes that are involved in running the simulation and drone of my Bachelors Thesis project. This is a work in progress.
+This repository includes the codes that are involved in running the simulation and drone of my Bachelors Thesis project. This is a work in progress. 
+
+The programs 
 
 ## Abstract
 One of the most pressing concerns in today’s drone industry is the risk of quadrotor motor failure, particularly in larger drones where such incidents can have severe or even fatal consequences. While mechanical safety measures like parachutes offer some level of protection, they come with limitations such as minimum altitude requirements and potential malfunctions. An alternative and increasingly important approach involves failsafe control strategies that enable the drone to maintain stable flight or execute a controlled landing using its remaining operational motors. Many such failsafe control methods have been proposed, but most remain theoretical and untested, with a noticeable lack of thorough comparative analyses to assess their real-world effectiveness. My project addresses this gap by evaluating the performance of standard control techniques like Proportional-Integral-Derivative (PID) controller, Model Predictive Controller (MPC), and Linear Quadratic Regulator (LQR) under motor failure conditions. A standard DIY Q450 quadcopter drone is used for all the tests so results are easily replicable. This comparative study aims to determine which approach best maintains drone stability in motor failure scenarios.
@@ -35,7 +37,7 @@ Due to a lack of time, it was decided to not persue this. If anyone wants to sim
 
 I first approached the ADAPT Lab (Drone Lab) at VIT Chennai, but soon found out that Pixhawk (which is the flight controller on all the drones in the lab) does not allow base level control on its real pixhawk controller at all. ADAPT Lab did not have a drone with Raspi and Arduino combination which I needed. Thus, I had to build my own drone and deal with all 3 aspects of robotics on my own. Mechanics, Electrical, and Programming. Programming was dealt with in the simulation itself, thus, electrical and mechanical aspects were left.
 
-####Mechanics
+### Mechanics
 
 I started with the mechanical aspects. In order to have a universal drone, I had to buy one with 45 degree arms where all motors were upright. Thus, I chose the Q450 drone chassis.
 Landing gear was added to this as I planned on adding the battery at the bottom. I also drilled 4 holes to insert zip ties in it for the battery. This finished majority of the physical body of the drone
@@ -87,6 +89,21 @@ Video -
 
 https://github.com/user-attachments/assets/7469a454-adf2-4a38-8daa-7c078af32e0d
 
+## Future Steps
+In the next few months, I have to complete the following steps -
+1. Tune PID controller gains by using gradient descent based autotuning.
+2. Apply LQR controller with both trirotor and quadrotor control and switch mechanism.
+3. Apply MPC controller with both trirotor and quadrotor control and switch mechanisms.
+4. Compare performance 
+
+The base code for LQR and MPC controllers is already written down. The logic was taken from websites [23] and [24]
+
+## Results 
+Currently, the first 5 out of 8 steps have been completed. The plans for simulation testing have been discarded. PID testing has shown promising results and the drone is ready to be used with the real controllers.
+
+The google docs report will be updated as soon as possible, and final code will see changes once the testing is complete.
+
+Please feel free to contact me at my email address - tembesuvrat@gmail.com
 
 
 
