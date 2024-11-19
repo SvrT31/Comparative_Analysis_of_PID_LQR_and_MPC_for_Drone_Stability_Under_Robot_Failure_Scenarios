@@ -61,6 +61,7 @@ A mechanical damper had to be added to the drone in order to reduce the noise co
 ## Program Architecture and Testing
 
 The flow of the programs looks like this -
+
 ![Screenshot from 2024-11-11 19-14-25](https://github.com/user-attachments/assets/1aedcfc5-69ae-488f-b058-b9f7a3ee4b36)
 
 For LQR and MPC controllers, the PID loops are changed with LQR and MPC control loops respectively.
@@ -83,6 +84,7 @@ At first, holding the altitude was not the primary concern. The orientation and 
 
 Base testing involves testing of individual control systems and all the motors. The drone testing was done in the Automotive garage. Here, it was found that the drone holds stability at the exact pwm value of 66. Also, with really low PID settings, the drone is also able to hold its weight and stop from crashing down.
 Video -
+
 https://github.com/user-attachments/assets/7469a454-adf2-4a38-8daa-7c078af32e0d
 
 
