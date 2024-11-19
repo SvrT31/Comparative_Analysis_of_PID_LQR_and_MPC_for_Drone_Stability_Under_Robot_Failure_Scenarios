@@ -102,7 +102,7 @@ In the next few months, I have to complete the following steps -
 3. Apply MPC controller with both trirotor and quadrotor control and switch mechanisms.
 4. Compare performance 
 
-The base code for LQR and MPC controllers is already written down. The logic was taken from websites [23] and [24]
+The base code for LQR and MPC controllers is already written down. The logic was taken from [this](https://automaticaddison.com/linear-quadratic-regulator-lqr-with-python-code-example/) and [this](https://www.instructables.com/Quadcopter-MPC-Control/) website.
 
 ## Results 
 Currently, the first 5 out of 8 steps have been completed. The plans for simulation testing have been discarded. PID testing has shown promising results and the drone is ready to be used with the real controllers.
