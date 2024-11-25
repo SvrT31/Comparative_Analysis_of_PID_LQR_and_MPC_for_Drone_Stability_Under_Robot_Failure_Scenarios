@@ -39,7 +39,7 @@ My first approach was to use a SITL like PX4 SITL or ArduCopter SITL. This would
 
 I was partly successful in it, as I simulated a proper Typhoon H480 drone in the Ignition Garden version of the Gazebo simulator. I included an Inertial Measurement Unit (IMU) and a Pressure sensor for altitude detection. But I quickly found out that there was no plugin to generate thrust via motor commands, and I would have to code it from scratch. As I am not familiar with coding Gazebo plugins, it would take me about a month to add these plugins to it.
 
-Due to a lack of time, it was decided to not persue this. If anyone wants to simulate a drone in gazebo, they would have to start from writing the plugins.
+Due to a lack of time, it was decided to not persue this. If anyone wants to simulate a drone in gazebo with the ability to control rpms of individual motors, they would have to start from writing the plugins.
 
 ## Drone Building
 
