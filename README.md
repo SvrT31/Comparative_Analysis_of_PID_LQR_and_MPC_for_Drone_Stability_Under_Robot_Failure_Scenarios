@@ -1,4 +1,4 @@
-This repository includes the codes that are involved in running the simulation and drone of my Bachelors Thesis project. This is a work in progress. Google docx report can be found [here](https://docs.google.com/document/d/1sgWU8yRvNyqL0LPePdABMbTXuWoa2HvK0gUAs3excbk/edit?usp=sharing).
+This repository includes the codes that are involved in running the simulation and drone of my research project. This is a work in progress. Google docx report can be found [here](https://docs.google.com/document/d/1sgWU8yRvNyqL0LPePdABMbTXuWoa2HvK0gUAs3excbk/edit?usp=sharing).
 
 The program "manual_tuning.py" is used to find the hold position for singular motors. 
 
