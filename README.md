@@ -25,11 +25,12 @@ Many promising techniques exist to address motor failure in quadrotor drones, bu
 1. Testing out possible simulation options
 2. Building the drone
 3. Electronics
-4. Program architecture and testing
+4. Drone architecture and testing
 5. Base flight
-6. Applying PID controller with gain-switching
-7. Applying LQR controller
-8. Applying MPC controller
+6. Applying PID controller
+7. Applying gain-switching for PID control
+8. Applying LQR controller
+9. Applying MPC controller
 
 ## Simulation
 
@@ -102,8 +103,7 @@ Video -
 https://github.com/user-attachments/assets/7469a454-adf2-4a38-8daa-7c078af32e0d
 
 ## Future Steps
-In the next few months, I have to complete the following steps -
-1. Tune PID controller gains by using gradient descent based autotuning.
+1. Finding Kp, Ki, and Kd for when all 4 motors are active and developing a rotor 4 kill switch and simultaneous gain-switching.
 2. Apply LQR controller with both trirotor and quadrotor control and switch mechanism.
 3. Apply MPC controller with both trirotor and quadrotor control and switch mechanisms.
 4. Compare performance 
